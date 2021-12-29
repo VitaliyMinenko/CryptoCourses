@@ -28,7 +28,11 @@ php -S localhost:3000
 </VirtualHost>
 
 ``` 
-If application start succesfully you should install all dependencies.
+If application start successfully you should install all dependencies and setup config files.
+* Copy .env.example and paste with name .env and setup all necessary fields.
+
+
+
 * Run next commands at the console.
 ```
 npm install
@@ -45,7 +49,7 @@ At the config file tests/api.suite.yml we should set url which we use for our ap
 url: http://localhost:3000/api/v1/
 ```
 
-After we can start tests by next command.
+After that we can start tests by next command.
 
 ```
 php vendor/bin/codecept run api
